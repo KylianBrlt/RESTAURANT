@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #0A001B;
+    --secondary-color: #F0EFF4;
+    --third-color: #9E829C;
+    --primary-font: "Dela Gothic One", serif;
+    --secondary-font: "Montserrat", sans-serif;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+footer {
+    margin-top: 10vh;
+    background-color: #343a40;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

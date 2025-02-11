@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Restaurant</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="menu.css">
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/Img/icon.png" alt="Logo" width="75" height="75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex justify-content-end w-100 gap-5 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <main>
+
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Notre Menu</h2>
+
+            
+            <ul class="nav nav-tabs justify-content-center mb-4" id="menuTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="entrees-tab" data-bs-toggle="tab" data-bs-target="#entrees"
+                        type="button" role="tab" aria-controls="entrees" aria-selected="true">Entrées</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="plats-tab" data-bs-toggle="tab" data-bs-target="#plats" type="button"
+                        role="tab" aria-controls="plats" aria-selected="false">Plats</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="desserts-tab" data-bs-toggle="tab" data-bs-target="#desserts"
+                        type="button" role="tab" aria-controls="desserts" aria-selected="false">Desserts</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="boissons-tab" data-bs-toggle="tab" data-bs-target="#boissons"
+                        type="button" role="tab" aria-controls="boissons" aria-selected="false">Boissons</button>
+                </li>
+            </ul>
+
+            
+            <div class="tab-content" id="menuTabContent">
+                <div class="tab-pane fade show active" id="entrees" role="tabpanel" aria-labelledby="entrees-tab">
+                    <div class="row">
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Img/Entrées/amuses-bouche-et-cocktail.jpg" class="card-img-top"
+                                    alt="Dish Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Assortiment de tapas</h5>
+                                    <p class="card-text">Sélection de tapas variés, incluant des brochettes de
+                                        crevettes, des mini-sandwiches et des bouchées de légumes.</p>
+                                    <span class="badge bg-success">Populaire</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Img/Entrées/entree.jpg" class="card-img-top" alt="Dish Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Salade de jambon et fromage
+                                    </h5>
+                                    <p class="card-text">Salade composée de tranches de jambon, de fromage, de tomates
+                                        cerises et de laitue, assaisonnée d'une vinaigrette légère.</p>
+                                    <span class="badge bg-success">Populaire</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Img/Entrées/le-salvert (3).jpg" class="card-img-top" alt="Dish Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Club sandwich gourmand</h5>
+                                    <p class="card-text">Club sandwich généreux avec des tranches de pain grillé, garni
+                                        de poulet, de bacon, de laitue, de tomate et de mayonnaise.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Img/Plats/le-salvert.jpg" class="card-img-top" alt="Dish Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tartare de saumon et fromage frais
+                                    </h5>
+                                    <p class="card-text">Tartare de saumon frais finement tranché, accompagné de fromage
+                                        frais et de légumes croquants, le tout délicatement assaisonné et décoré avec
+                                        une sauce légère et des touches de coulis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="plats" role="tabpanel" aria-labelledby="plats-tab">
+                    <div class="row">
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Img/Plats/caption (1).jpg" class="card-img-top" alt="Dish Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Filet de bœuf aux légumes
+                                    </h5>
+                                    <p class="card-text">Filet de bœuf tendre accompagné de légumes de saison et d'une
+                                        sauce riche, servi sur une planche en bois pour une présentation rustique.
+                                    </p>
+                                    <span class="badge bg-success">Populaire</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Img/Plats/poisson.jpg" class="card-img-top" alt="Dish Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Poisson en croûte de sel</h5>
+                                    <p class="card-text">Filet de poisson cuit en croûte de sel, accompagné de brocoli
+                                        vapeur et d'une sauce légère, pour une expérience culinaire raffinée.
+                                    </p>
+                                    <span class="badge bg-success">Populaire</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Img/Plats/img-20200728-141118-largejpg.jpg" class="card-img-top"
+                                    alt="Dish Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Filet de poulet rôti aux fèves et sauce au vin rouge</h5>
+                                    <p class="card-text">Tendre filet de poulet rôti, accompagné de fèves fraîches et d'une sauce au vin rouge riche en saveurs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Img/Plats/le-salvert (1).jpg" class="card-img-top" alt="Dish Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gravlax de saumon aux radis et sauce au raifort </h5>
+                                    <p class="card-text">Tranches fines de saumon gravlax délicatement assaisonnées,
+                                        accompagnées de radis croquants et d'une sauce au raifort pour une touche
+                                        épicée.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+                    
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Img/Desserts/dessert1.jpg" class="card-img-top" alt="Dish Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Moelleux au chocolat avec glace vanille et fruits frais
+                                    </h5>
+                                    <p class="card-text">Un moelleux au chocolat fondant, accompagné d'une boule de
+                                        glace vanille et de morceaux de fruits frais pour une touche de fraîcheur.
+
+                                    </p>
+                                    <span class="badge bg-success">Populaire</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Img/Desserts/dessert2.jpg" class="card-img-top" alt="Dish Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Crème brûlée à la vanille
+                                    </h5>
+                                    <p class="card-text">Une crème brûlée onctueuse à la vanille, caramélisée à la
+                                        perfection pour un contraste croquant et crémeux.
+
+                                    </p>
+                                    <span class="badge bg-success">Populaire</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Img/Plats/caption.jpg" class="card-img-top" alt="Dish Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tartelette aux fruits et caramel</h5>
+                                    <p class="card-text">Tartelette croustillante garnie de fruits frais et d'un coulis
+                                        de caramel, parfaite pour une touche sucrée en fin de repas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Img/Desserts/dessert3.jpg" class="card-img-top" alt="Dish Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Brochette de fruits frais</h5>
+                                    <p class="card-text">Une brochette colorée de fruits frais, incluant des morceaux de
+                                        kiwi, d'ananas, de fraise et de banane, pour une option légère et
+                                        rafraîchissante.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Img/Desserts/fraise.jpg" class="card-img-top" alt="Dish Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tartelette aux fraises et sorbet
+                                    </h5>
+                                    <p class="card-text">Une tartelette délicate aux fraises, accompagnée d'un sorbet à
+                                        la fraise et d'un coulis de framboise pour une explosion de saveurs fruitées.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="boissons" role="tabpanel" aria-labelledby="boissons-tab">
+                    
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="Img/Boissons/cafe.jpg" class="card-img-top" alt="Dish Name">
+                                <div class="card-body">
+                                    <h5 class="card-title">Café gourmand</h5>
+                                    <p class="card-text">Un café expresso accompagné d'un petit canelé, servi avec un sachet de sucre pour ajuster la douceur à votre goût. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>Informations de contact</h5>
+                        <p>Adresse : Route D'Olivet, 53940, Le Genest-Saint-Isle</p>
+                        <p>Téléphone : +33 2 43 37 14 37</p>
+                        <p>Email : contact@lesalvert.com</p>
+                    </div>
+                    <div class="col-md-6 text-md-right">
+                        <h5>Suivez-nous</h5>
+                        <a href="https://www.facebook.com/restaurantlesalvert" class="text-white mr-3"><i
+                                class="fab fa-facebook"></i> Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>
