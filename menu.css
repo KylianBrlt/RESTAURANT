@@ -1,20 +1,5 @@
-:root {
-    --primary-color: #0A001B;
-    --secondary-color: #F0EFF4;
-    --third-color: #9E829C;
-    --primary-font: "Dela Gothic One", serif;
-    --secondary-font: "Montserrat", sans-serif;
-}
-
 body, html {
     font-family: Arial, sans-serif;
-}
-
-.bg-cover {
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .card {
