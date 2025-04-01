@@ -1,0 +1,271 @@
+:root {
+    /* Nouvelles couleurs plus provençales */
+    --primary-color: #5B8C5A;    /* Vert olive provençal */
+    --secondary-color: #F9F1E6;  /* Crème légèrement plus chaud */
+    --accent-color: #E6A522;     /* Or/jaune plus chaleureux */
+    --text-color: #333333;       /* Garde le même gris foncé */
+    --white-color: #FFFFFF;
+    --gray-bg: #F8F8F8;
+    --dark-bg: #2E4532;          /* Vert foncé pour le footer */
+    --primary-font: "Dela Gothic One", serif;
+    --secondary-font: "Montserrat", sans-serif;
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.15);
+    --transition: all 0.3s ease;
+}
+
+/* Base styles */
+body {
+    font-family: var(--secondary-font);
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+}
+
+/* Navigation */
+.navbar {
+    padding: 0.5rem 0;
+    background-color: var(--white-color) !important;
+}
+
+.navbar-brand img {
+    transition: var(--transition);
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-color) !important;
+    padding: 0.5rem 1rem !important;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+.nav-link.active {
+    font-weight: 700 !important;
+    position: relative;
+}
+
+.nav-link.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    right: 1rem;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+/* Hero section */
+.hero-section {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannertext {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    color: var(--white-color);
+    padding: 2rem !important;
+}
+
+.slogan {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+/* Cards and content */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    overflow: hidden;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.badge {
+    padding: 0.5rem 0.8rem;
+    font-weight: 500;
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 12px 25px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    transition: var(--transition);
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
+    font-weight: 600;
+    background: transparent;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+/* Forms */
+.form-control, .form-select {
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.25rem rgba(183, 153, 13, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-lg {
+    padding: 0.8rem 2rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-outline-light:hover {
+    color: var(--primary-color);
+}
+
+/* Testimonials */
+.testimonials .carousel-control-prev-icon,
+.testimonials .carousel-control-next-icon {
+    padding: 1.5rem;
+}
+
+/* Colors */
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-light {
+    background-color: var(--gray-bg) !important;
+}
+
+.bg-success {
+    background-color: var(--accent-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg);
+    color: var(--white-color);
+}
+
+footer a {
+    color: var(--white-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    color: var(--accent-color) !important;
+    text-decoration: none;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+    }
+    
+    .bannertext {
+        padding: 1rem !important;
+    }
+    
+    .bannertext h1 {
+        font-size: 1.8rem;
+    }
+    
+    .bannertext p {
+        font-size: 1rem;
+    }
+    
+    .nav-tabs .nav-link {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .card-img-top {
+        height: 180px;
+    }
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.navbar-scrolled {
+    padding: 0.3rem 0 !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Corrections pour la section CTA */
+.cta h1, .cta h2, .cta h3, .cta h4, .cta h5, .cta h6 {
+    color: var(--white-color); /* Force les titres en blanc dans cette section */
+}

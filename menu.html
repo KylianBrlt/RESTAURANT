@@ -9,55 +9,52 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <title>Restaurant</title>
-    
+    <title>La Petite Provence - Menu</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <!-- Bootstrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
-    <link rel="stylesheet" href="menu.css">
-    
-    
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-    
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="/Img/icon.png" alt="Logo" width="75" height="75"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="/Img/icon.png" alt="Logo" width="75" height="75"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav d-flex justify-content-end w-100 gap-5 text-center">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="home.html">Home</a>
+                        <a class="nav-link" href="index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                        <a class="nav-link active fw-bold" aria-current="page" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-
                 </ul>
             </div>
         </div>
     </nav>
-
     
     <main>
-
         <div class="container mt-5">
-            <h2 class="text-center mb-4">Notre Menu</h2>
-        
-            <ul class="nav nav-tabs justify-content-center mb-4" id="menuTab">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="display-5 fw-bold mb-3">Notre Carte</h1>
+                    <p class="lead">Découvrez notre sélection de plats préparés avec des produits frais et de saison</p>
+                </div>
+            </div>
+
+            <ul class="nav nav-tabs justify-content-center mb-5" id="menuTab">
                 <li class="nav-item">
                     <button class="nav-link active" id="entrees-tab" data-bs-toggle="tab" data-bs-target="#entrees" type="button">Entrées</button>
                 </li>
@@ -224,24 +221,45 @@
             </div>
         </div>
         
+        <section class="cta py-5 bg-primary text-white mt-5">
+            <div class="container text-center">
+                <h2 class="mb-4">Vous avez fait votre choix ?</h2>
+                <p class="lead mb-4">Réservez votre table dès maintenant pour déguster nos spécialités</p>
+                <a href="contact.html" class="btn btn-light btn-lg">Réserver une table</a>
+            </div>
+        </section>
+        
         <footer class="bg-dark text-white py-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <h5>Informations de contact</h5>
-                        <p>Adresse : Route D'Olivet, 53940, Le Genest-Saint-Isle</p>
-                        <p>Téléphone : +33 2 43 37 14 37</p>
-                        <p>Email : contact@lesalvert.com</p>
+                    <div class="col-md-4 mb-3">
+                        <h5 class="mb-3">La Petite Provence</h5>
+                        <p>Une expérience gastronomique authentique au cœur de la Provence.</p>
                     </div>
-                    <div class="col-md-6 text-md-right">
-                        <h5>Suivez-nous</h5>
-                        <a href="https://www.facebook.com/restaurantlesalvert" class="text-white mr-3"><i
-                                class="fab fa-facebook"></i> Facebook</a>
+                    <div class="col-md-4 mb-3">
+                        <h5 class="mb-3">Informations de contact</h5>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> XXXXXXXXXX</p>
+                        <p><i class="fas fa-phone me-2"></i> +33 X XX XX XX XX</p>
+                        <p><i class="fas fa-envelope me-2"></i> XXX@XXXXXXXX.fr</p>
                     </div>
+                    <div class="col-md-4 mb-3">
+                        <h5 class="mb-3">Suivez-nous</h5>
+                        <div class="d-flex gap-3">
+                            <a href="https://www.facebook.com" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                            <a href="https://www.instagram.com" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a href="https://www.tripadvisor.fr" class="text-white"><i class="fab fa-tripadvisor fa-lg"></i></a>
+                        </div>
+                        <div class="mt-3">
+                            <p>Horaires d'ouverture:<br>Du mardi au dimanche, 12h-15h / 19h-22h30</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center pt-3 border-top border-secondary">
+                    <p class="mb-0">&copy; 2025 La Petite Provence. Tous droits réservés.</p>
                 </div>
             </div>
         </footer>
-
+    </main>
 </body>
 
 </html>
