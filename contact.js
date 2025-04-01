@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class="modal-body">
                                 <p>Merci ${prenom} ${nom} pour votre réservation !</p>
                                 <p>Nous vous attendons le <strong>${dateFormatee}</strong> à <strong>${heure}</strong> pour <strong>${personnes}</strong> ${personnes > 1 ? 'personnes' : 'personne'}.</p>
-                                <p>Un email de confirmation a été envoyé à <strong>${email}</strong>.</p>
+                                
                                 ${message ? `<p class="mt-3"><strong>Votre message :</strong> <br>${message}</p>` : ''}
                             </div>
                             <div class="modal-footer">
